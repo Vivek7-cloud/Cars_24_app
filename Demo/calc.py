@@ -9,4 +9,8 @@ def subtraction(a,b,c,d,e):
     elif c>a and c>b and c>d and c>e:
         return c-a-b-d-e
     elif d>a and d>b and d>c and d>e:
-        
+        return d-a-b-c-e
+    else:        return e-a-b-c-d
+
+def multiplication(a,b,c,d,e):
+    return a*b*c*d*e    
