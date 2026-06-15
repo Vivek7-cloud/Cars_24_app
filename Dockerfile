@@ -1,5 +1,5 @@
 # Base image - python + os
-FROM python:3.10-slim
+FROM python:3.10
 # Creating a directory
 WORKDIR /app
 # Copying requirements file into the container directory
