@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:964059510693:task-definition/car_price_task:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:066263929193:task-definition/car-price-task:4",
   "containerDefinitions": [
     {
-      "name": "car_price_container",
-      "image": "964059510693.dkr.ecr.ap-south-1.amazonaws.com/my_app@sha256:9f6e1cde8b72ae51cc3c6e9339d28d63fd5515a2ab046bbce7787bb57e258fa7",
+      "name": "car-price-container",
+      "image": "066263929193.dkr.ecr.ap-south-1.amazonaws.com/my_app@sha256:b97e06af2b159ee8eb80dc1f628a19685f8a020beb3df16fe93aae6b09218a2c",
       "cpu": 0,
       "portMappings": [
         {
@@ -23,7 +23,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/car_price_task",
+          "awslogs-group": "/ecs/car-price-task",
           "awslogs-create-group": "true",
           "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "ecs"
@@ -33,10 +33,10 @@
       "systemControls": []
     }
   ],
-  "family": "car_price_task",
-  "executionRoleArn": "arn:aws:iam::964059510693:role/ecsTaskExecutionRole",
+  "family": "car-price-task",
+  "executionRoleArn": "arn:aws:iam::066263929193:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 1,
+  "revision": 4,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -71,8 +71,8 @@
   "placementConstraints": [],
   "compatibilities": [
     "EC2",
-    "MANAGED_INSTANCES",
-    "FARGATE"
+    "FARGATE",
+    "MANAGED_INSTANCES"
   ],
   "runtimePlatform": {
     "cpuArchitecture": "X86_64",
@@ -83,8 +83,13 @@
   ],
   "cpu": "1024",
   "memory": "3072",
-  "registeredAt": "2026-06-15T17:55:21.502Z",
-  "registeredBy": "arn:aws:iam::964059510693:root",
+  "registeredAt": "2026-06-15T09:39:15.037Z",
+  "registeredBy": "arn:aws:sts::066263929193:assumed-role/AWSReservedSSO_AdministratorAccess_dc255e302d4f9578/vishal.vijayaraghavan_1@scaler.com",
   "enableFaultInjection": false,
-  "tags": []
+  "tags": [
+    {
+      "key": "Scaler",
+      "value": "DONOTDELETE"
+    }
+  ]
 }
