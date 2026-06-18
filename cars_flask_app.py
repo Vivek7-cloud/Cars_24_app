@@ -8,7 +8,7 @@ app = Flask(__name__)
 with open("models/xgb_car_price_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-@app.route("/predict", methods=["POST"])
+@app.route('/predict', methods=['POST'])
 def predict():
 
     data = request.json
@@ -40,7 +40,7 @@ def predict():
     })
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
 
 
